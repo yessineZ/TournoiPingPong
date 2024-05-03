@@ -5,14 +5,22 @@ console.log(all) ;
 numPlayersInput.addEventListener("change",(e) => {
      numberPlayers= e.target.value ;
      DoingDivs(numberPlayers) ;  
+     header.style.display = "block" ;
      console.log(16/2) ; 
 });
+let header = document.querySelector(".header") ;
+window.onload = () => {
+ 
+    header.style.display = "none" ;
+}
+
+
 
 
 
 document.body.querySelector(".btn-add").addEventListener("click",(e)=> {
     let AllInputs = document.querySelectorAll(".playerName") ; 
-
+    
     let AllFirstInputs =Array.from(AllInputs).filter((ele)=> {
                 let lab = parseInt(ele.getAttribute("label")) ; 
                 console.log(typeof(lab)) ; 
@@ -43,7 +51,7 @@ document.body.querySelector(".btn-add").addEventListener("click",(e)=> {
     let name = addInput.value ;
     NotYet[rand].value = name ; 
     NotYet[rand].setAttribute("done",true) ;   
-    e.target.value = "" ; 
+    addInput.value = "" ; 
     
 
 

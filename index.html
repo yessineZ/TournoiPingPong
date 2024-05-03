@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="index2.css">   
 </head>
 <body style="background-color: black;">
-    <div class="p-4 border">
+    <div class="p-4 border header">
         <div class="row col-12 offset-2">
           <h4 class="" style="color : white">Enter a new Player</h4>
           <div class="col-2 p-1">
@@ -39,11 +39,39 @@
 
     </div>
 
+    <footer>
+      <p >Made by Misty &copy;	 <span class="year"></span></p>
+    </footer>
+
 
     <script src="index1.js"></script>
 
+
+    <script>
+      var date = new Date();
+      var year = date.getFullYear();
+      document.querySelector(".year").innerHTML = year;
+
+    </script>
     
 </body>
+
+<style>
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black ; 
+    text-align: center;
+    background-color: rgb(112, 104, 104);
+    font-family: Roboto, Arial;
+    font-weight : bold ; 
+
+  }
+
+
+</style>
 
 
 
