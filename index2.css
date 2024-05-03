@@ -1,0 +1,57 @@
+
+    * {
+        box-sizing: border-box ;
+        margin : 0 ;
+        font-family: Roboto , Arial ;
+        padding: 0;
+    }
+    body {
+        font-family: Roboto,Arial;
+    }
+
+    .all {
+        display: flex ;
+        flex-direction: row ;
+        align-items: center;
+        justify-content: center;
+        font-family: Roboto,Arial;
+    }
+
+    .all .col {
+        display: flex ;
+        flex-direction: column ;
+        align-items: center;
+        justify-content: center;
+        margin : 10px ;
+        background-color : black ;
+        color : white ;
+        border-radius : 10px ;
+        border : 1px solid white ;
+        font-size : 20px ;
+        font-weight : bold ;
+        cursor : pointer ;
+        font-family: Roboto,Arial;
+ 
+
+    }
+
+    .all .col .two {
+        margin-bottom: 13px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: Roboto,Arial;
+    }
+
+    .all .col input  {
+        border-radius: 5px ;
+        margin-top: 3px ;
+        border : 1px solid white ;
+        background-color: rgb(214, 214, 214);
+        font-family: Roboto,Arial;
+        font-weight: bold ; 
+        padding: 5px;
+        cursor: pointer;
+
+    }
